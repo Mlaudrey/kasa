@@ -1,21 +1,38 @@
-import React from 'react';
-import logements from './data/logements.json'; // Import des données JSON
-import { Routes, Route } from "react-router-dom";
-import Home from './components/Home/Home';
-import Pages2 from './components/Pages2/Pages2';
+import './App.scss';
+import React from "react";
+import Header from "./compenents/Header/Header.js"
+import Footer from "./compenents/Footer/Footer.js"
+import Home from "./compenents/Home/Home.js";
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import NotFound from './404/Not-found.js';
+import FicheLogement from './compenents/Logements/Logements.js';
 
-function App() {
-  console.log(logements); // Pour vérifier si les données JSON sont bien importées
+import Pages2 from './compenents/Pages2/Pages2.js';
+
+const App = () => {
+  const basenameValue = '/APP'; 
 
   return (
-    <div className="App">
-      <Pages2 />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Pages2" element={<Pages2 />} />
+   
+   <BrowserRouter>
+   
+      <div className='main-container'>
+      <Header />
+      <main>
+      <Routes> 
+         <Route path="/fiche-logement/:id" element={<FicheLogement  />} />
+         <Route path="/Pages2" element={<Pages2 />} />
+         <Route path="/" element={<Home />} />
+         <Route path="/Not-found" element={<NotFound />} />
+         <Route path="/*" element={<Navigate replace to="/Not-found" />} />
       </Routes>
-    </div>
+      </main>
+     </div>
+     <Footer />
+   
+    </BrowserRouter>
+    
   );
-}
+};
 
 export default App;
