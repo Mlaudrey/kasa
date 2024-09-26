@@ -5,9 +5,9 @@ import Footer from "./component/Footer/Footer.js";
 import Home from "./component/Home/Home.js";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import NotFound from './404/Not-found.js';
-import InfosLogement from './component/Logements/logements.js';
+import InfosLogement from './Logements/logements.js';
 import MyContext from './MyContext.js';
-import Pages2 from './component/Pages2/Pages2.js';
+import Pages2 from './Pages2/Pages2.js';
 
 const App = () => {
   const basenameValue = '/APP'; 

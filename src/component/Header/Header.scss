@@ -17,7 +17,8 @@ header {
         gap: 20px;
         align-items: center;
         .nav-links {
-            color: #ff6060;
+            color: #000000; 
+            font-weight: 500; 
             text-decoration: none;
             @media screen and (max-width: 768px) {
                 text-transform: uppercase;
