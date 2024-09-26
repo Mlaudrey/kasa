@@ -1,14 +1,18 @@
 import React from 'react';
-
+import Collapse from '../../component/Collapse/Collapse';
+import Carroussel from '../../component/Carroussel/Carroussel';
+import Chargement from '../../components/Chargement/Chargement';
+import Host from '../../component/Host/Host';
+import StarRating from '../../components/Stars/Starsrating';
+import Tag from '../../components/Tag/Tag';
 import './logement.scss';
-import { paragraph, list } from '../../assets/Constantes/constant';
+import { paragraph, list } from '../../assets/Constantes/constante';
 import data from '../../data/logements.json';
 import { useNavigate, useParams } from 'react-router-dom';
 //useNavigate permet de naviguer entre les pages et useParams permet de récupérer les paramètres de l'url
-
 import { useState, useEffect } from 'react';
 
-const InfosLogement = () => {
+const FicheLogement = () => {
   const navigate = useNavigate(); // c'est un hook qui permet de naviguer entre les pages
   const { id } = useParams(); // c'est un hook qui permet de récupérer les paramètres de l'url
   const [isLoading, setIsLoading] = useState(true); //useState permet de créer un état local dans un composant fonctionnel
@@ -24,7 +28,7 @@ const InfosLogement = () => {
   const selectedLogement = data.find((logement) => logement.id === id); //  on récupère le logement qui correspond à l'id de l'url
 
   if (!selectedLogement) {
-    return navigate('/Not-found'); // si le logement n'existe pas on redirige vers la page 404
+    return navigate('/not-found'); // si le logement n'existe pas on redirige vers la page 404
   } else {
     const ratingValue = parseInt(selectedLogement.rating); // on convertit la note en nombre entier
     const tagsValue = selectedLogement.tags || []; // si le logement n'a pas de tags on lui attribue un tableau vide
@@ -74,4 +78,4 @@ const InfosLogement = () => {
   }
 };
 
-export default InfosLogement;
+export default FicheLogement;
