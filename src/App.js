@@ -1,11 +1,11 @@
-import './App.scss';
 import React from "react";
+import './App.scss';
 import Header from "./compenents/Header/Header.js"
 import Footer from "./compenents/Footer/Footer.js"
 import Home from "./compenents/Home/Home.js";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import NotFound from './404/Not-found.js';
-import FicheLogement from './compenents/Logements/Logements.js';
+import InfosLogement from './compenents/Logements/logements.js';
 
 import Pages2 from './compenents/Pages2/Pages2.js';
 
@@ -20,7 +20,7 @@ const App = () => {
       <Header />
       <main>
       <Routes> 
-         <Route path="/fiche-logement/:id" element={<FicheLogement  />} />
+         <Route path="/InfosLogement/:id" element={<InfosLogement  />} />
          <Route path="/Pages2" element={<Pages2 />} />
          <Route path="/" element={<Home />} />
          <Route path="/Not-found" element={<NotFound />} />
@@ -34,5 +34,6 @@ const App = () => {
     
   );
 };
+
 
 export default App;
