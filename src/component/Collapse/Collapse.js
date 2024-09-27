@@ -1,6 +1,6 @@
 import React from 'react';
 import './Collapse.scss';
-import downArrow from '../../assets/down-arrow.png';
+import downArrow from '../../assets/Image/down-arrow.png';
 import { paragraph, list } from '../../assets/Constante/constante';
 import PropTypes from 'prop-types';
 

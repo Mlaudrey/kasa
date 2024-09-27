@@ -1,6 +1,6 @@
 import React from "react";
-import chargement from "../../assets/chargement.png";
-import logo from "../../assets/kasa-logo-pink.png";
+import chargement from "../../assets/Image/chargement.png";
+import logo from "../../assets/Image/kasa-logo-pink.png";
 import "./Chargement.scss"
 
 const Chargement =  () => {

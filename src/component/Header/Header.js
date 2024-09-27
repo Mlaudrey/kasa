@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
-import logo from '../../assets/kasa-logo-pink.png';
+import logo from '../../assets/Image/kasa-logo-pink.png';
 
 
 const Header = () => {

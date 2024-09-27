@@ -1,6 +1,6 @@
 import React from 'react';
-import pinkVector from '../../assets/pink-star.png';
-import greyVector from '../../assets/grey-star.png';
+import pinkVector from '../../assets/Image/pink-star.png';
+import greyVector from '../../assets/Image/grey-star.png';
 import PropTypes from 'prop-types';
 import './Star.scss';
 const StarRating = (props) => {

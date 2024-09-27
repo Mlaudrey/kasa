@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Carroussel.scss';
-import nextArrow from '../../assets/next-arrow.svg';
-import previousArrow from '../../assets/previous-arrow.svg';
+import nextArrow from '../../assets/Image/next-arrow.svg';
+import previousArrow from '../../assets/Image/previous-arrow.svg';
 
 const Carroussel = (props) => {
   //props est un objet qui contient toutes les propriétés passées à notre composant.

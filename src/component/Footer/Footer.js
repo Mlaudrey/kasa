@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.scss';
-import logo from '../../assets/kasa-logo-white.png';
+import logo from '../../assets/Image/kasa-logo-white.png';
 
 const Footer = () => {
   return (

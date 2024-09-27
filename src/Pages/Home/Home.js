@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.scss';
 import Banner from '../../component/Banner/Banner';
-import headerImage from '../../assets/muhr-P_XxsdVgtpQ-unsplash.jpg';
+import headerImage from '../../assets/Image/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg';
 import Card from '../../component/Cards/Cards';
 import data from '../../data/logements.json';
 import Chargement from '../../component/Chargement/Chargement';

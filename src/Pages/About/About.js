@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.scss';
 import Banner from '../../component/Banner/Banner';
-import headerImage from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
+import headerImage from '../../assets/Image/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
 import Collapse from '../../component/Collapse/Collapse';
 import Chargement from '../../component/Chargement/Chargement';
 import { paragraph } from '../../assets/Constante/constante';
