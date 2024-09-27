@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.scss';
-import Banner from '../Banner/Banner';
+import Banner from '../../component/Banner/Banner';
 import headerImage from '../../assets/muhr-P_XxsdVgtpQ-unsplash.jpg';
 import Card from '../../component/Cards/Cards';
 import data from '../../data/logements.json';

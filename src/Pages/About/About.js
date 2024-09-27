@@ -1,10 +1,10 @@
 import React from 'react';
-import './Pages2.scss';
-import Banner from '../component/Banner/Banner';
-import headerImage from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
-import Collapse from '../component/Collapse/Collapse';
-import Chargement from '../component/Chargement/Chargement';
-import { paragraph } from '../assets/Constantes/constante';
+import './About.scss';
+import Banner from '../../component/Banner/Banner';
+import headerImage from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
+import Collapse from '../../component/Collapse/Collapse';
+import Chargement from '../../component/Chargement/Chargement';
+import { paragraph } from '../../assets/Constante/constante';
 import { useState, useEffect } from 'react';
 
 const About = () => {

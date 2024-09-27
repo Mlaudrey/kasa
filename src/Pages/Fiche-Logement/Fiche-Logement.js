@@ -1,13 +1,13 @@
 import React from 'react';
-import Collapse from '../component/Collapse/Collapse';
-import Carroussel from '../component/Carroussel/Carroussel';
-import Chargement from '../component/Chargement/Chargement';
-import Host from '../component/Host/Host';
-import StarRating from '../component/Star/Star';
-import Tag from '../component/Tag/Tag';
-import './logement.scss';
-import { paragraph, list } from '../assets/Constantes/constante';
-import data from '../data/logements.json';
+import Collapse from '../../component/Collapse/Collapse';
+import Carroussel from '../../component/Carroussel/Carroussel';
+import Chargement from '../../component/Chargement/Chargement';
+import Host from '../../component/Host/Host';
+import StarRating from '../../component/Star/Star';
+import Tag from '../../component/Tag/Tag';
+import './Fiche-Logement.scss';
+import { paragraph, list } from '../../assets/Constante/constante';
+import data from '../../data/logements.json';
 import { useNavigate, useParams } from 'react-router-dom';
 //useNavigate permet de naviguer entre les pages et useParams permet de récupérer les paramètres de l'url
 import { useState, useEffect } from 'react';
