@@ -5,7 +5,7 @@ import Footer from "./component/Footer/Footer.js";
 import Home from "./Pages/Home/Home.js";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import NotFound from "./Pages/404/Not-found.js";
-import FicheLogement from "./Pages/Fiche-Logement/fiche-logement.js";
+import FicheLogement from "./Pages/Fiche-Logement/fiche-logement.js"
 import MyContext from "./MyContext.js";
 import About from "./Pages/About/about.js"; 
 
