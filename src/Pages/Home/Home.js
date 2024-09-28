@@ -18,7 +18,7 @@ const Home = () => {
     }, 1000); //1000ms = 1s
   }, []); //[] = tableau de dépendances, si on le laisse vide, le useEffect ne s'executera qu'une seule fois
 
-  const cards = data.map((item) => <Card key={item.id} item={item} />); //map permet de parcourir un tableau et de retourner un tableau de même taille
+  const Cards = data.map((item) => <Card key={item.id} item={item} />); //map permet de parcourir un tableau et de retourner un tableau de même taille
   //key est une prop spéciale qui permet à React d'identifier chaque élément de manière unique
   //item est une prop qui contient les données de chaque logement
   //item est ajouté en tant que prop dans le composant Card et est accessible via props.item
@@ -29,8 +29,8 @@ const Home = () => {
       <div>
         <Banner image={headerImage} title="Chez vous, partout et ailleurs" />
       </div>
-      <div className="home">
-        {isLoading ? <Chargement /> : <div className="cards"> {cards}</div>}
+      <div className="Home">
+        {isLoading ? <Chargement /> : <div className="Cards"> {Cards}</div>}
       </div>
     </>
   );

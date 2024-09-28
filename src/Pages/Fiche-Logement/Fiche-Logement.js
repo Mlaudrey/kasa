@@ -5,7 +5,7 @@ import Chargement from '../../component/Chargement/Chargement';
 import Host from '../../component/Host/Host';
 import StarRating from '../../component/Star/Star';
 import Tag from '../../component/Tag/Tag';
-import './Fiche-Logement.scss';
+import './fiche-logement.scss';
 import { paragraph, list } from '../../assets/Constante/constante';
 import data from '../../data/logements.json';
 import { useNavigate, useParams } from 'react-router-dom';

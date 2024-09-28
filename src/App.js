@@ -1,13 +1,13 @@
 import React from "react";
-import './App.scss';
+import "./App.scss";
 import Header from "./component/Header/Header.js";
 import Footer from "./component/Footer/Footer.js";
 import Home from "./Pages/Home/Home.js";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
-import NotFound from './Pages/404/Not-found.js';
-import FicheLogement from "./Pages/Fiche-Logement/Fiche-Logement.js";
-import MyContext from './MyContext.js';
-import About from './Pages/About/About.js'; 
+import NotFound from "./Pages/404/Not-found.js";
+import FicheLogement from "./Pages/Fiche-Logement/fiche-logement.js";
+import MyContext from "./MyContext.js";
+import About from "./Pages/About/about.js"; 
 
 const App = () => {
   const basenameValue = '/APP'; 
@@ -19,8 +19,8 @@ const App = () => {
           <Header />
           <main>
             <Routes>
-              <Route path="/Fiche-Logement/:id" element={<FicheLogement />} />
-              <Route path="/About" element={<About />} /> 
+              <Route path="/fiche-logement/:id" element={<FicheLogement />} />
+              <Route path="/about" element={<About />} /> 
               <Route path="/" element={<Home />} />
               <Route path="/Not-found" element={<NotFound />} />
               <Route path="/*" element={<Navigate replace to="/Not-found" />} />

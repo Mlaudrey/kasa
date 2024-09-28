@@ -8,7 +8,7 @@ const Cards = (props) => {
 
   return (
     <Link to={`/logements/${item.id}`} className="cardlink">
-    <article id={item.id} className="cards">
+    <article id={item.id} className="Cards">
       <img className="cardimg" src={item.cover} alt={item.title} />
       <h2 className="cardtitle">{item.title}</h2>
     </article>
