@@ -1,7 +1,7 @@
 import React from 'react';
 import './Collapse.scss';
 import downArrow from '../../assets/Image/down-arrow.png';
-import { paragraph, list } from '../../assets/Constante/Constante';
+import { paragraph, list } from '../../assets/Constant/Constant';
 import PropTypes from 'prop-types';
 
 const Collapse = ({ type, title, description = '', equipments = [] }) => {

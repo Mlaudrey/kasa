@@ -6,7 +6,7 @@ import Host from '../../component/Host/Host';
 import StarRating from '../../component/Star/Star';
 import Tag from '../../component/Tag/Tag';
 import './Fiche-Logement.scss';
-import { paragraph, list } from '../../assets/Constante/Constante';
+import { paragraph, list } from '../../assets/Constant/Constant';
 import data from '../../data/logements.json';
 import { useNavigate, useParams } from 'react-router-dom';
 //useNavigate permet de naviguer entre les pages et useParams permet de récupérer les paramètres de l'url
