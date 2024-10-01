@@ -2,19 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Cards.scss';
 
-const Cards = (props) => {
+const Card = (props) => {
   const { item } = props;
   //les {} permettent de déstructurer un objet, c'est à dire de récupérer les propriétés d'un objet dans des variables
 
   return (
-    <Link to={`/logements/${item.id}`} className="cardlink">
-    <article id={item.id} className="Cards">
-      <img className="cardimg" src={item.cover} alt={item.title} />
-      <h2 className="cardtitle">{item.title}</h2>
-    </article>
-  </Link>
-  
+    <Link to={`/Fiche-Logement/${item.id}`} className="cardlink">
+      <article id={item.id} className="card">
+        <img className="cardimg" src={`${item.cover}`} alt={item.title} />
+        <h2 className="cardtitle">{item.title}</h2>
+      </article>
+    </Link>
   );
 };
 
-export default Cards;
+export default Card;

@@ -1,12 +1,12 @@
 import React from 'react';
 import Collapse from '../../component/Collapse/Collapse';
-import Carroussel from '../../component/Carroussel/Carroussel';
+import Gallery from '../../component/Gallery/Gallery';
 import Chargement from '../../component/Chargement/Chargement';
 import Host from '../../component/Host/Host';
 import StarRating from '../../component/Star/Star';
 import Tag from '../../component/Tag/Tag';
-import './fiche-logement.scss';
-import { paragraph, list } from '../../assets/Constante/constante';
+import './Fiche-Logement.scss';
+import { paragraph, list } from '../../assets/Constante/Constante';
 import data from '../../data/logements.json';
 import { useNavigate, useParams } from 'react-router-dom';
 //useNavigate permet de naviguer entre les pages et useParams permet de récupérer les paramètres de l'url
@@ -41,7 +41,7 @@ const FicheLogement = () => {
       <Chargement />
     ) : (
       <>
-        <Carroussel images={selectedLogement.pictures} />
+        <Gallery images={selectedLogement.pictures} />
         <div className="container-content">
           <div className="container-wrapper">
             <div className="container-heading">

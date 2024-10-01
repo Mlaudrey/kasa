@@ -1,17 +1,17 @@
 //code pour carroussel.scss
-.carrousel {
+.gallery {
     position: relative;
     display: flex;
     height: 400px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     margin: 0px;
-    .carrousel-image {
+    .gallery-image {
         width: 100%;
         height: 100%;
         border-radius: 25px;
         object-fit: cover;
     }
-    .carrousel-arrow {
+    .gallery-arrow {
         position: absolute;
         cursor: pointer;
         width: 30px;
@@ -24,14 +24,14 @@
     .next {
         right: 6px;
     }
-    .carrousel-caption {
+    .gallery-caption {
         position: absolute;
         bottom: 10px;
         color: white;
         width: 100%;
         text-align: center;
     }
-    .carrousel-active {
+    .gallery-active {
         width: 100%;
         opacity: 1 !important;
         /*on affiche l'image*/
@@ -51,7 +51,7 @@
             border-radius: 10px;
         }
     }
-    .carrousel-slide {
+    .gallery-slide {
         opacity: 0;
         /*on cache les images*/
     }

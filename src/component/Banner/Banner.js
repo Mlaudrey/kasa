@@ -3,13 +3,13 @@ import './Banner.scss';
 
 const Banner = (props) => {
   return (
-    <div className="Background">
+    <div className="background">
       <img
         src={props.image}
-        className="Background-image"
+        className="background-image"
         alt="Paysage en plan large"
       />
-      {props.title && <h1 className="Background-title">{props.title}</h1>}
+      {props.title && <h1 className="background-title">{props.title}</h1>}
     </div>
   );
 };

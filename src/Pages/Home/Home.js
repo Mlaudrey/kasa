@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.scss';
 import Banner from '../../component/Banner/Banner';
-import headerImage from '../../assets/Image/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg';
+import headerImage from '../../assets/Image/muhr-P_XxsdVgtpQ-unsplash.jpg';
 import Card from '../../component/Cards/Cards';
 import data from '../../data/logements.json';
 import Chargement from '../../component/Chargement/Chargement';
@@ -29,8 +29,8 @@ const Home = () => {
       <div>
         <Banner image={headerImage} title="Chez vous, partout et ailleurs" />
       </div>
-      <div className="Home">
-        {isLoading ? <Chargement /> : <div className="Cards"> {Cards}</div>}
+      <div className="home">
+        {isLoading ? <Chargement /> : <div className="cards"> {Cards}</div>}
       </div>
     </>
   );
