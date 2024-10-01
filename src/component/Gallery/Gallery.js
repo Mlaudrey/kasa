@@ -11,12 +11,12 @@ const Gallery = (props) => {
   //le 0 est la valeur initiale du state counter
 
   function prevImage() {
-    // fonction qui permet de passer à l'image précédente dans le carrousel
+    // fonction qui permet de passer à l'image précédente dans la gallery
     setCounter((prevIndex) => (prevIndex === 0 ? maxIndex : prevIndex - 1)); //prevIndex est la valeur précédente du state
   }
 
   function nextImage() {
-    // fonction qui permet de passer à l'image suivante dans le carrousel
+    // fonction qui permet de passer à l'image suivante dans la gallery
     setCounter((prevIndex) => (prevIndex === maxIndex ? 0 : prevIndex + 1)); //prevIndex est la valeur précédente du state
   }
   const carrouselImages = props.images.map((image, index) => (
@@ -35,7 +35,7 @@ const Gallery = (props) => {
   ));
 
   return (
-    //on retourne le carrousel avec les flèches de navigation et la légende du carrousel si le nombre d'images est supérieur à 1
+    //on retourne la gallery avec les flèches de navigation et la légende du carrousel si le nombre d'images est supérieur à 1
     <figure className="gallery">
       {carrouselImages}
       {props.images.length > 1 && ( // si le nombre d'images est supérieur à 1, on affiche les flèches
