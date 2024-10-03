@@ -1,6 +1,6 @@
 import React from 'react';
 import './Collapse.scss';
-import downArrow from '../../assets/Image/down-arrow.png';
+import upArrow from '../../assets/Image/up-arrow (1).svg';
 import { paragraph, list } from '../../assets/Constant/Constant';
 import PropTypes from 'prop-types';
 
@@ -47,9 +47,9 @@ const Collapse = ({ type, title, description = '', equipments = [] }) => {
       <div onClick={toggle} className="section-title-container">
         <h3 className="section-title">{title}</h3>
         <img
-          src={downArrow}
+          src={upArrow}
           className="section-icon"
-          alt="icône d'ouverture ou fermeture."
+          alt="icône flèche d'ouverture ou fermeture ."
           style={iconStyle}
         />
       </div>

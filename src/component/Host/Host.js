@@ -9,7 +9,7 @@ const Host = (props) => {
       <img
         className="hostImage"
         src={props.host.picture}
-        alt="Portrait of the host"
+        alt="Portrait de l'hôte"
       />
     </div>
   );

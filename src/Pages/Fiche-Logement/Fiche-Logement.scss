@@ -45,7 +45,7 @@
     .collapsible-container {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 50px;
   
       @media screen and (min-width: 768px) {
         flex-direction: row;
@@ -72,7 +72,7 @@
       .section-title {
         font-size: 1.125rem;
         font-weight: bold;
-        color: black; /* Ajustez la couleur du texte si besoin */
+        color: white; /* Ajustez la couleur du texte si besoin */
         margin: 0;
       }
   
