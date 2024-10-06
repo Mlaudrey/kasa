@@ -17,7 +17,7 @@ const Header = () => {
           Accueil
         </Link>
         <Link to="/About" className="nav-links">
-          A propos
+          A Propos
         </Link>
       </nav>
     </header>

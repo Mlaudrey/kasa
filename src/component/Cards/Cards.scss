@@ -1,56 +1,68 @@
 .cards {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    row-gap: 25px;
-
+    gap: 15px; 
+    
     @media screen and (max-width: 768px) {
         flex-direction: column;
-        justify-content: unset;
-        gap: 20px;
-    }
-}
-
-.cardlink {
-    width: 30%;
-    height: 270px;
-
-    @media screen and (max-width: 768px) {
-        width: 100%;
+        gap: 10px; 
     }
 
-    .card {
-        margin-bottom: 20px;
-        position: relative;
-        cursor: pointer;
-        width: 100%;
-        height: 100%;
-
-        .cardimg {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-            filter: brightness(85%);
-            transition: filter 0.3s ease;
-
-            &:hover {
-                filter: none;
-            }
+    .cardlink {
+        width: calc(33% - 10px); 
+        aspect-ratio: 1 / 1; 
+        position: relative;  
+        
+        @media screen and (max-width: 768px) {
+            width: 100%; 
+            aspect-ratio: 1 / 1; 
         }
 
-        .cardtitle {
-            color: white;
-            font-size: 1.125rem;
-            font-weight: 500;
-            position: absolute;
-            bottom: 0;
-            margin: 15px 20px;
-            background: linear-gradient(180deg, #FF6060 0%, rgba(255, 96, 96, 0.5) 100%);
-            padding: 5px 10px;
-            border-radius: 10px;
-            text-shadow: 0 0 50px black;
+        .card {
+            position: relative;
+            width: 100%;
+            height: 100%; /* Assurez-vous que la carte prend tout l'espace disponible */
+            cursor: pointer;
+
+            .cardimg {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+                filter: brightness(85%);
+                transition: 0.3s;
+
+                &:hover {
+                    filter: none;
+                }
+            }
+
+            /* Pseudo-élément pour le dégradé */
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 33%); /* Dégradé ajusté pour être transparent à partir d'un tiers */
+                border-radius: 10px; /* Assure que le dégradé a les coins arrondis */
+                z-index: 1; /* Assurez-vous que le dégradé est au-dessus de l'image */
+            }
+
+            .cardtitle {
+                color: white;
+                font-size: 1.125rem;
+                font-weight: 500;
+                position: absolute;
+                bottom: 0;
+                margin: 10px 15px; 
+                padding: 5px 10px;
+                border-radius: 10px;
+                text-shadow: 0 0 50px black;
+                z-index: 2; /* Le titre est au-dessus du dégradé */
+            }
         }
     }
 }

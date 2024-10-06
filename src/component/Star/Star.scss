@@ -1,0 +1,18 @@
+.stars {
+    display: flex;
+    border-radius: 10px;
+    .st {
+         width: 25px;
+         height: 25px;
+         border-radius: 10px !important;
+
+    }
+    @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+        .st {
+            width: 30px;
+            height: 30px;
+            border-radius: 10px !important;
+        }
+    }
+ }

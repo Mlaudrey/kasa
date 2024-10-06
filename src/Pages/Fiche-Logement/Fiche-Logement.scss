@@ -14,18 +14,20 @@
       }
   
       .container-heading {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
   
         h1 {
           color: #ff6060;
           margin: 0;
+          font-weight: 100;
         }
   
         h2 {
-          color: #ff6060;
-          margin: 0;
+          margin-top: -10px;
+          font-size: 1em;
+          font-weight: 100;
         }
       }
   
@@ -58,8 +60,9 @@
   .section {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
+    width:80%;
   
     .section-title-container {
       display: flex;
@@ -70,7 +73,7 @@
       cursor: pointer;
   
       .section-title {
-        font-size: 1.125rem;
+        font-size: 1.250rem;
         font-weight: bold;
         color: white; /* Ajustez la couleur du texte si besoin */
         margin: 0;
